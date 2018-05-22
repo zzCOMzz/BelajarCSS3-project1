@@ -2,6 +2,10 @@ h1,h2,h3,h4,h5,h6{
   margin: 0;
   padding: 0
 }
+div{
+  margin: 0px;
+  padding: 0px;
+}
 
 #box1,#box2,#box3{
   margin: 2px
@@ -30,6 +34,7 @@ h1,h2,h3,h4,h5,h6{
   display: block; 
 }
 
+/* Kartu */
 #box3{
   perspective: 700px;
 }
@@ -63,6 +68,7 @@ h1,h2,h3,h4,h5,h6{
 /* Proggress Bar */
 
 #border{
+  margin-top: 90px;
   border : 1px solid black;
   height: 30px;
   width: 400px;
@@ -72,7 +78,6 @@ h1,h2,h3,h4,h5,h6{
   animation-name: gerak;
   animation-timing-function: ease-in-out;
   animation-duration: 10s;
-  animation-delay: 0.5s;
   animation-iteration-count: 2;
   height: 30px;
 }
@@ -84,5 +89,9 @@ h1,h2,h3,h4,h5,h6{
   30%{width: 60px}
   45%{width: 90px}
   50%{width: 140px}
-  100%{width: 400px}
+  60%{width: 190px}
+  75%{width: 240px}
+  90%{width: 340px}
+  99%{width: 400px}
+  100%{width: 0px}
 }
