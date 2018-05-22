@@ -1,0 +1,88 @@
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0
+}
+
+#box1,#box2,#box3{
+  margin: 2px
+}
+/* transition */
+#box1:hover{
+  transition-timing-function: ease-in-out;
+  height: 120px;
+  background-color: red;
+  transition-delay: 1s;
+}
+
+
+#box1{
+  background-color: aqua;
+  height: 100px;
+  width: 100px;
+  display: block;
+  transition: height 1s, background 1s;
+}
+
+#box2{
+  background-color: greenyellow;
+  height: 100px;
+  width: 100px; 
+  display: block; 
+}
+
+#box3{
+  perspective: 700px;
+}
+#card{
+  position: relative;
+  background-color: green;
+  height: 300px;
+  width: 300px; 
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+
+#card:hover{
+  transform: rotateY(180deg)
+}
+#back{
+  transform: rotateY(180deg);
+  background-color: red;
+}
+#front, #back{
+  position: absolute;
+  top : 0px;
+  left: 0px;
+  height: 300px;
+  width: 300px;
+  backface-visibility: hidden; 
+}
+
+
+
+/* Proggress Bar */
+
+#border{
+  border : 1px solid black;
+  height: 30px;
+  width: 400px;
+}
+#proggress{
+  background-color: lightblue;
+  animation-name: gerak;
+  animation-timing-function: ease-in-out;
+  animation-duration: 10s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 2;
+  height: 30px;
+}
+
+@keyframes gerak{
+  0%{width: 10px;}
+  10%{width: 20px}
+  20%{width: 40px}
+  30%{width: 60px}
+  45%{width: 90px}
+  50%{width: 140px}
+  100%{width: 400px}
+}
